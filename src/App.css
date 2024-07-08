@@ -1,0 +1,67 @@
+.navigation {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  justify-content: space-between;
+}
+.logo_container{
+  display: flex;
+  align-items: left;
+  width: 50%;
+  color: white;
+}
+.logo{
+  padding: 10px;
+  height:70px;
+  width:70px;
+}
+.container{
+  display: flex;
+  margin-left: 5px;
+  color:white;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  float: right;
+}
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+ul a:hover {
+  color:#00A0C6; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
+
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(31deg, #afa9e6 2%, #daafe6 40%, #88c5e9 60%);
+  animation: gradient 50s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
