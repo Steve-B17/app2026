@@ -3,10 +3,27 @@ import Goals from './Goals.js';
 import Footer from './Footer.js';
 import Sidebar from './Sidebar.js';
 import logo from './assets/renewable-energy.svg';
+import Video from "./assets/Video 1.mp4";
 function App() {
   return (<>
   <header>
   <nav className='navigation'>
+  <div> <video
+            loop
+            autoPlay
+            muted
+            id="video"
+            style={{
+              height: "50vh",
+              width: "100vw",
+              objectFit: "cover",
+              position: "relative",
+              pointerEvents: "none",
+              zIndex: -10,
+            }}
+          >
+            <source src={Video} type="video/mp4" />
+          </video></div>
   <div className ='logo_container'>
       <img className='logo' src={logo}></img>
       <div> <h1>Eco Gen Forecasts</h1></div></div>
