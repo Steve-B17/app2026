@@ -8,20 +8,20 @@ function App() {
   return (<>
   <header>
   <nav className='navigation'>
-  <div> <video
-            loop
-            autoPlay
-            muted
-            id="video"
-            style={{
-              height: "50vh",
-              width: "100vw",
-              objectFit: "cover",
-              position: "relative",
-              pointerEvents: "none",
-              zIndex: -10,
-            }}
-          >
+  <div> 
+  <video autoPlay loop muted
+  style={{
+      position:'absolute',
+      width:'100%',
+      top:'50%',
+      left:'50%',
+      bottom:'50%',
+      right:'50%',
+      height:'100%',
+      objectFit:'cover',
+      transform:'translate(-50%,-50%)',
+      zIndex:'-100'
+    }}>
             <source src={Video} type="video/mp4" />
           </video></div>
   <div className ='logo_container'>
@@ -39,7 +39,6 @@ function App() {
         <h1>Predicting the Future of Energy Today!!!</h1>
         <p>Empower power generation with precise forecasts. Unlock renewable energy's potential with our innovative tech</p>
       </div>
-      <Sidebar/>
       <Footer/>
 </>);
 }
